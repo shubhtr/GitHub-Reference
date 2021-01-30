@@ -68,3 +68,38 @@
 
     $ git pull
 
+# see changes done before and after
+
+If you want to see what you haven't git added yet:
+
+    $ git diff myfile.txt
+
+or if you want to see already added changes
+
+    $ git diff --cached myfile.txt
+
+# display head commit id
+
+    $ git rev-parse HEAD
+
+short version
+    
+    $ git rev-parse --short HEAD
+
+Also,
+
+    $ git log -1
+
+for only commit id
+
+    $ git log | head -n 1
+
+Another way,
+
+    $ git show-ref --head
+
+by default HEAD is filtered out. Be careful about following though ; plural "heads" with a 's' at the end. The following command shows branches under "refs/heads"
+
+    $ git show-ref --heads
+
+
