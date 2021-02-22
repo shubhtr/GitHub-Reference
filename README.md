@@ -1,4 +1,7 @@
 # GitHub Reference
+## by Shubhrendu Tripathi
+
+<br><br>
 
 # Frequently Used
 
@@ -68,6 +71,10 @@
 
     $ git pull
 
+# to update my local master to match remote master
+
+    $ git pull origin main
+
 # see changes done before and after
 
 If you want to see what you haven't git added yet:
@@ -101,5 +108,9 @@ Another way,
 by default HEAD is filtered out. Be careful about following though ; plural "heads" with a 's' at the end. The following command shows branches under "refs/heads"
 
     $ git show-ref --heads
+
+# display url
+
+    $ git config --get remote.origin.url
 
 
